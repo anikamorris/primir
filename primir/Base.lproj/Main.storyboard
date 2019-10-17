@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -64,6 +65,7 @@
                                     <outlet property="dateAddedLabel" destination="Kxc-10-QFd" id="Vqg-4D-8Lx"/>
                                     <outlet property="productBrandLabel" destination="Dj1-OS-vO9" id="spx-ug-t2r"/>
                                     <outlet property="productNameLabel" destination="vJR-Pe-Za8" id="SKU-l8-xCQ"/>
+                                    <segue destination="LeH-rB-sLD" kind="show" identifier="displayProduct" id="h5Y-78-xQZ"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -72,11 +74,90 @@
                             <outlet property="delegate" destination="MPC-mM-g5L" id="vdF-76-7xl"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="My Makeup" id="bgx-rF-czo"/>
+                    <navigationItem key="navigationItem" title="My Makeup" id="bgx-rF-czo">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="vRk-WM-8xi">
+                            <connections>
+                                <segue destination="LeH-rB-sLD" kind="show" identifier="addProduct" id="AxV-Ex-ytG"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zhV-7r-cv4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1566.6666666666667" y="97.767857142857139"/>
+        </scene>
+        <!--New Product-->
+        <scene sceneID="PEp-7K-QAb">
+            <objects>
+                <viewController id="LeH-rB-sLD" customClass="DisplayProductsViewController" customModule="primir" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tMw-el-D95">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="yjb-HJ-9qe">
+                                <rect key="frame" x="15" y="108" width="384" height="116"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Product Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6R0-1N-JQp">
+                                        <rect key="frame" x="0.0" y="0.0" width="384" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Brand" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4Mo-ue-Yv1">
+                                        <rect key="frame" x="0.0" y="43" width="384" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="$" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zm2-wK-7LG">
+                                        <rect key="frame" x="0.0" y="86" width="384" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="zm2-wK-7LG" firstAttribute="height" secondItem="6R0-1N-JQp" secondAttribute="height" id="7OQ-C9-DJW"/>
+                                    <constraint firstItem="4Mo-ue-Yv1" firstAttribute="height" secondItem="6R0-1N-JQp" secondAttribute="height" id="na9-Pf-fEE"/>
+                                </constraints>
+                            </stackView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Product Notes" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="QNa-8i-ZVW">
+                                <rect key="frame" x="15" y="244" width="384" height="618"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="yjb-HJ-9qe" firstAttribute="top" secondItem="qNL-4k-oZm" secondAttribute="top" constant="20" id="7NF-7T-zZC"/>
+                            <constraint firstItem="QNa-8i-ZVW" firstAttribute="top" secondItem="yjb-HJ-9qe" secondAttribute="bottom" constant="20" id="E8j-92-0aq"/>
+                            <constraint firstItem="yjb-HJ-9qe" firstAttribute="leading" secondItem="qNL-4k-oZm" secondAttribute="leading" constant="15" id="KFo-Er-MzE"/>
+                            <constraint firstItem="qNL-4k-oZm" firstAttribute="trailing" secondItem="yjb-HJ-9qe" secondAttribute="trailing" constant="15" id="NHZ-jP-Zff"/>
+                            <constraint firstItem="qNL-4k-oZm" firstAttribute="bottom" secondItem="QNa-8i-ZVW" secondAttribute="bottom" id="RXC-PM-UoN"/>
+                            <constraint firstItem="QNa-8i-ZVW" firstAttribute="leading" secondItem="qNL-4k-oZm" secondAttribute="leading" constant="15" id="gIT-yf-AuE"/>
+                            <constraint firstItem="qNL-4k-oZm" firstAttribute="trailing" secondItem="QNa-8i-ZVW" secondAttribute="trailing" constant="15" id="oiM-Y9-G6o"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qNL-4k-oZm"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="New Product" id="hqK-ee-RbQ">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="LeS-ob-FMA">
+                            <connections>
+                                <segue destination="Vqk-kE-OxK" kind="unwind" identifier="cancel" unwindAction="unwindWithSegue:" id="mdM-c9-rEn"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="2Aw-T0-UdK">
+                            <connections>
+                                <segue destination="Vqk-kE-OxK" kind="unwind" identifier="save" unwindAction="unwindWithSegue:" id="JJr-tf-0h7"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rl6-UM-7jl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Vqk-kE-OxK" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2327" y="96"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="qwl-lE-Ks6">
@@ -97,4 +178,7 @@
             <point key="canvasLocation" x="656.52173913043487" y="97.767857142857139"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="AxV-Ex-ytG"/>
+    </inferredMetricsTieBreakers>
 </document>

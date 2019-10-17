@@ -28,5 +28,23 @@ class ListProductsTableViewController: UITableViewController {
         
         return cell
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let identifier = segue.identifier else { return }
+        
+        switch identifier {
+        case "displayProduct":
+            print("cell tapped")
+            
+        case "addProduct":
+            print("add product bar button item tapped")
+            
+        default:
+            print("unexpected segue identifier")
+        }
+    }
+    
+    @IBAction func unwindWithSegue(_ segue: UIStoryboardSegue) {
+    }
 }
 
