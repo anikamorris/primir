@@ -30,27 +30,20 @@
                                             <rect key="frame" x="15" y="10" width="384" height="89.5"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Product Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vJR-Pe-Za8">
-                                                    <rect key="frame" x="0.0" y="0.0" width="384" height="25"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="384" height="41.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                     <color key="textColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Product Brand" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dj1-OS-vO9">
-                                                    <rect key="frame" x="0.0" y="32" width="384" height="25.5"/>
+                                                    <rect key="frame" x="0.0" y="48.5" width="384" height="41"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                     <color key="textColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date Added" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kxc-10-QFd">
-                                                    <rect key="frame" x="0.0" y="64.5" width="384" height="25"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="Dj1-OS-vO9" firstAttribute="height" secondItem="vJR-Pe-Za8" secondAttribute="height" id="XAT-Wf-lFw"/>
-                                                <constraint firstItem="Kxc-10-QFd" firstAttribute="height" secondItem="vJR-Pe-Za8" secondAttribute="height" id="nVM-cZ-OHh"/>
                                             </constraints>
                                         </stackView>
                                     </subviews>
@@ -62,7 +55,6 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="dateAddedLabel" destination="Kxc-10-QFd" id="Vqg-4D-8Lx"/>
                                     <outlet property="productBrandLabel" destination="Dj1-OS-vO9" id="spx-ug-t2r"/>
                                     <outlet property="productNameLabel" destination="vJR-Pe-Za8" id="SKU-l8-xCQ"/>
                                     <segue destination="LeH-rB-sLD" kind="show" identifier="displayProduct" id="h5Y-78-xQZ"/>

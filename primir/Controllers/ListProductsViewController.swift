@@ -10,6 +10,8 @@ import UIKit
 
 class ListProductsTableViewController: UITableViewController {
     
+    var products = [Product]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -24,7 +26,6 @@ class ListProductsTableViewController: UITableViewController {
         
         cell.productNameLabel.text = "Product Name"
         cell.productBrandLabel.text = "Brand"
-        cell.dateAddedLabel.text = "Date Added"
         
         return cell
     }

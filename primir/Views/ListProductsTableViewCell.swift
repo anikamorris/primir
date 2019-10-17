@@ -13,6 +13,5 @@ class ListProductsTableViewCell: UITableViewCell {
     
     @IBOutlet weak var productNameLabel: UILabel!
     @IBOutlet weak var productBrandLabel: UILabel!
-    @IBOutlet weak var dateAddedLabel: UILabel!
     
 }
