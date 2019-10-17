@@ -8,22 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		CFF96FA4235912FD0022E970 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF96FA3235912FD0022E970 /* AppDelegate.swift */; };
-		CFF96FA6235912FD0022E970 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF96FA5235912FD0022E970 /* ViewController.swift */; };
+		CFF96FA6235912FD0022E970 /* ListProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF96FA5235912FD0022E970 /* ListProductsViewController.swift */; };
 		CFF96FA9235912FD0022E970 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFF96FA7235912FD0022E970 /* Main.storyboard */; };
 		CFF96FAC235912FD0022E970 /* primir.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CFF96FAA235912FD0022E970 /* primir.xcdatamodeld */; };
 		CFF96FAE235913010022E970 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFF96FAD235913010022E970 /* Assets.xcassets */; };
 		CFF96FB1235913010022E970 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFF96FAF235913010022E970 /* LaunchScreen.storyboard */; };
+		CFF96FBD2359149E0022E970 /* DisplayProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF96FBC2359149E0022E970 /* DisplayProductsViewController.swift */; };
+		CFF96FBF235914D20022E970 /* ListProductsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF96FBE235914D20022E970 /* ListProductsTableViewCell.swift */; };
+		CFF96FC1235915040022E970 /* Date+convertToString.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF96FC0235915040022E970 /* Date+convertToString.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CFF96FA0235912FD0022E970 /* primir.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = primir.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFF96FA3235912FD0022E970 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CFF96FA5235912FD0022E970 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CFF96FA5235912FD0022E970 /* ListProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListProductsViewController.swift; sourceTree = "<group>"; };
 		CFF96FA8235912FD0022E970 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CFF96FAB235912FD0022E970 /* primir.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = primir.xcdatamodel; sourceTree = "<group>"; };
 		CFF96FAD235913010022E970 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CFF96FB0235913010022E970 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CFF96FB2235913010022E970 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFF96FBC2359149E0022E970 /* DisplayProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayProductsViewController.swift; sourceTree = "<group>"; };
+		CFF96FBE235914D20022E970 /* ListProductsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListProductsTableViewCell.swift; sourceTree = "<group>"; };
+		CFF96FC0235915040022E970 /* Date+convertToString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+convertToString.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +62,11 @@
 		CFF96FA2235912FD0022E970 /* primir */ = {
 			isa = PBXGroup;
 			children = (
+				CFF96FBB2359145B0022E970 /* Views */,
+				CFF96FBA235914430022E970 /* Controllers */,
+				CFF96FB92359142B0022E970 /* Extensions */,
+				CFF96FB82359140C0022E970 /* Helpers */,
 				CFF96FA3235912FD0022E970 /* AppDelegate.swift */,
-				CFF96FA5235912FD0022E970 /* ViewController.swift */,
 				CFF96FA7235912FD0022E970 /* Main.storyboard */,
 				CFF96FAD235913010022E970 /* Assets.xcassets */,
 				CFF96FAF235913010022E970 /* LaunchScreen.storyboard */,
@@ -65,6 +74,38 @@
 				CFF96FAA235912FD0022E970 /* primir.xcdatamodeld */,
 			);
 			path = primir;
+			sourceTree = "<group>";
+		};
+		CFF96FB82359140C0022E970 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		CFF96FB92359142B0022E970 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CFF96FC0235915040022E970 /* Date+convertToString.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CFF96FBA235914430022E970 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CFF96FA5235912FD0022E970 /* ListProductsViewController.swift */,
+				CFF96FBC2359149E0022E970 /* DisplayProductsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CFF96FBB2359145B0022E970 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CFF96FBE235914D20022E970 /* ListProductsTableViewCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +179,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFF96FA6235912FD0022E970 /* ViewController.swift in Sources */,
+				CFF96FA6235912FD0022E970 /* ListProductsViewController.swift in Sources */,
 				CFF96FAC235912FD0022E970 /* primir.xcdatamodeld in Sources */,
 				CFF96FA4235912FD0022E970 /* AppDelegate.swift in Sources */,
+				CFF96FC1235915040022E970 /* Date+convertToString.swift in Sources */,
+				CFF96FBD2359149E0022E970 /* DisplayProductsViewController.swift in Sources */,
+				CFF96FBF235914D20022E970 /* ListProductsTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
