@@ -1,4 +1,8 @@
 # Primir
+<p float='left'>
+<img width="400" alt="Screen Shot 2019-10-18 at 2 01 37 PM" src="https://user-images.githubusercontent.com/29615757/67128428-77ebf000-f1b0-11e9-9ee6-f004e3e77929.png">
+<img width="400" alt="Screen Shot 2019-10-18 at 2 03 17 PM" src="https://user-images.githubusercontent.com/29615757/67128550-d913c380-f1b0-11e9-8561-f1e52ddafed2.png">
+ </p>
 
 ## Project Motivation
 I've always been interested in makeup, and have spent a long time curating a pretty large makeup collection.
