@@ -46,7 +46,7 @@ class DisplayProductsViewController: UIViewController, UITextViewDelegate {
             brandTextField.text = product.brand
             priceTextField.text = product.price
             // if user didn't save notes on the product...
-            if product.content == "Product Notes" {
+            if product.content == "  Product Notes" {
                 // ... either empty text view ...
                 contentTextView.text = ""
             } else {
@@ -59,8 +59,8 @@ class DisplayProductsViewController: UIViewController, UITextViewDelegate {
             brandTextField.text = ""
             // create fake placeholder text
             contentTextView.delegate = self
-            contentTextView.text = "Product Notes"
-            contentTextView.textColor = UIColor.lightGray
+            contentTextView.text = "  Product Notes"
+            contentTextView.textColor = UIColor.placeholderGray
         }
     }
     
@@ -104,7 +104,7 @@ class DisplayProductsViewController: UIViewController, UITextViewDelegate {
     
     // finish setting up fake placeholder text functionality
     func textViewDidBeginEditing(_ textView: UITextView) {
-        if contentTextView.textColor == UIColor.lightGray {
+        if contentTextView.textColor == UIColor.placeholderGray {
             contentTextView.text = nil
             contentTextView.textColor = UIColor.black
         }

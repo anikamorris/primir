@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		CF5B6A9623592F650031C939 /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5B6A9523592F650031C939 /* CoreDataHelper.swift */; };
 		CF5B6A9A235997360031C939 /* UITableView+loadWithAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5B6A99235997360031C939 /* UITableView+loadWithAnimation.swift */; };
+		CF5B6A9C2359A68F0031C939 /* UIColor+placeholderTextColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5B6A9B2359A68F0031C939 /* UIColor+placeholderTextColor.swift */; };
 		CFF96FA4235912FD0022E970 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF96FA3235912FD0022E970 /* AppDelegate.swift */; };
 		CFF96FA6235912FD0022E970 /* ListProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF96FA5235912FD0022E970 /* ListProductsViewController.swift */; };
 		CFF96FA9235912FD0022E970 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFF96FA7235912FD0022E970 /* Main.storyboard */; };
@@ -23,6 +24,7 @@
 /* Begin PBXFileReference section */
 		CF5B6A9523592F650031C939 /* CoreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
 		CF5B6A99235997360031C939 /* UITableView+loadWithAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+loadWithAnimation.swift"; sourceTree = "<group>"; };
+		CF5B6A9B2359A68F0031C939 /* UIColor+placeholderTextColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+placeholderTextColor.swift"; sourceTree = "<group>"; };
 		CFF96FA0235912FD0022E970 /* primir.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = primir.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFF96FA3235912FD0022E970 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFF96FA5235912FD0022E970 /* ListProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListProductsViewController.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 			children = (
 				CFF96FC0235915040022E970 /* Date+convertToString.swift */,
 				CF5B6A99235997360031C939 /* UITableView+loadWithAnimation.swift */,
+				CF5B6A9B2359A68F0031C939 /* UIColor+placeholderTextColor.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -188,6 +191,7 @@
 				CFF96FA6235912FD0022E970 /* ListProductsViewController.swift in Sources */,
 				CFF96FAC235912FD0022E970 /* primir.xcdatamodeld in Sources */,
 				CFF96FA4235912FD0022E970 /* AppDelegate.swift in Sources */,
+				CF5B6A9C2359A68F0031C939 /* UIColor+placeholderTextColor.swift in Sources */,
 				CF5B6A9623592F650031C939 /* CoreDataHelper.swift in Sources */,
 				CFF96FC1235915040022E970 /* Date+convertToString.swift in Sources */,
 				CFF96FBD2359149E0022E970 /* DisplayProductsViewController.swift in Sources */,

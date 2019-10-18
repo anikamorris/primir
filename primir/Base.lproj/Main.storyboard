@@ -124,7 +124,7 @@
                                     <constraint firstItem="4Mo-ue-Yv1" firstAttribute="height" secondItem="6R0-1N-JQp" secondAttribute="height" id="zMl-A3-a63"/>
                                 </constraints>
                             </stackView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Product Notes" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="QNa-8i-ZVW">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="  Product Notes" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="QNa-8i-ZVW">
                                 <rect key="frame" x="30" y="333" width="354" height="529"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
