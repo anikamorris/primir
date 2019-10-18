@@ -23,7 +23,11 @@ class DisplayProductsViewController: UIViewController, UITextViewDelegate {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
+        super.viewWillAppear(false)
+        nameTextField.layer.cornerRadius = 8.0
+        brandTextField.layer.cornerRadius = 8.0
+        priceTextField.layer.cornerRadius = 8.0
+        contentTextView.layer.cornerRadius = 10.0
         if let product = product {
 //            set title
             let brand = product.brand ?? ""

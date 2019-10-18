@@ -14,10 +14,13 @@
         <scene sceneID="0ws-kL-vra">
             <objects>
                 <tableViewController id="MPC-mM-g5L" customClass="ListProductsTableViewController" customModule="primir" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="mZs-ZA-fzb">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="singleLineEtched" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="mZs-ZA-fzb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="1" green="0.95294117649999999" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="1" green="0.95294117649999999" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="separatorColor" red="0.25098039220000001" green="0.23921568630000001" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="sectionIndexBackgroundColor" red="1" green="0.95294117649999999" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ListProductsTableViewCell" id="nyO-zO-I3p" customClass="ListProductsTableViewCell" customModule="primir" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="100"/>
@@ -31,17 +34,18 @@
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Product Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vJR-Pe-Za8">
                                                     <rect key="frame" x="0.0" y="0.0" width="384" height="31.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                    <color key="textColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                                    <color key="textColor" red="0.25098039220000001" green="0.23921568630000001" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Product Brand" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dj1-OS-vO9">
                                                     <rect key="frame" x="0.0" y="38.5" width="384" height="31"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                                    <color key="textColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                                    <color key="textColor" red="0.25098039220000001" green="0.23921568630000001" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <color key="tintColor" red="1" green="0.95294117649999999" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
                                                 <constraint firstItem="Dj1-OS-vO9" firstAttribute="height" secondItem="vJR-Pe-Za8" secondAttribute="height" id="XAT-Wf-lFw"/>
                                             </constraints>
@@ -54,6 +58,7 @@
                                         <constraint firstItem="fN2-CK-876" firstAttribute="leading" secondItem="R0u-IP-FVk" secondAttribute="leading" constant="15" id="i9f-zY-daf"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="1" green="0.95294117649999999" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <outlet property="productBrandLabel" destination="Dj1-OS-vO9" id="spx-ug-t2r"/>
                                     <outlet property="productNameLabel" destination="vJR-Pe-Za8" id="SKU-l8-xCQ"/>
@@ -68,6 +73,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="My Makeup" id="bgx-rF-czo">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="vRk-WM-8xi">
+                            <color key="tintColor" red="0.25098039220000001" green="0.23921568630000001" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <segue destination="LeH-rB-sLD" kind="show" identifier="addProduct" id="AxV-Ex-ytG"/>
                             </connections>
@@ -87,41 +93,41 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="yjb-HJ-9qe">
-                                <rect key="frame" x="15" y="108" width="384" height="116"/>
+                                <rect key="frame" x="15" y="108" width="384" height="200"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Product Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6R0-1N-JQp">
-                                        <rect key="frame" x="0.0" y="0.0" width="384" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="384" height="58"/>
                                         <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Brand" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4Mo-ue-Yv1">
-                                        <rect key="frame" x="0.0" y="43" width="384" height="30"/>
+                                        <rect key="frame" x="0.0" y="71" width="384" height="58"/>
                                         <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="$" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zm2-wK-7LG">
-                                        <rect key="frame" x="0.0" y="86" width="384" height="30"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="$" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zm2-wK-7LG">
+                                        <rect key="frame" x="0.0" y="142" width="384" height="58"/>
                                         <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="45"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="zm2-wK-7LG" firstAttribute="height" secondItem="6R0-1N-JQp" secondAttribute="height" id="7OQ-C9-DJW"/>
-                                    <constraint firstItem="4Mo-ue-Yv1" firstAttribute="height" secondItem="6R0-1N-JQp" secondAttribute="height" id="na9-Pf-fEE"/>
+                                    <constraint firstItem="zm2-wK-7LG" firstAttribute="height" secondItem="6R0-1N-JQp" secondAttribute="height" id="AgI-bK-yO6"/>
+                                    <constraint firstItem="4Mo-ue-Yv1" firstAttribute="height" secondItem="6R0-1N-JQp" secondAttribute="height" id="zMl-A3-a63"/>
                                 </constraints>
                             </stackView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Product Notes" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="QNa-8i-ZVW">
-                                <rect key="frame" x="15" y="244" width="384" height="618"/>
+                                <rect key="frame" x="15" y="328" width="384" height="534"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="1" green="0.95294117649999999" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="yjb-HJ-9qe" firstAttribute="top" secondItem="qNL-4k-oZm" secondAttribute="top" constant="20" id="7NF-7T-zZC"/>
                             <constraint firstItem="QNa-8i-ZVW" firstAttribute="top" secondItem="yjb-HJ-9qe" secondAttribute="bottom" constant="20" id="E8j-92-0aq"/>
@@ -135,11 +141,13 @@
                     </view>
                     <navigationItem key="navigationItem" title="New Product" id="hqK-ee-RbQ">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="LeS-ob-FMA">
+                            <color key="tintColor" red="0.25098039220000001" green="0.23921568630000001" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <segue destination="Vqk-kE-OxK" kind="unwind" identifier="cancel" unwindAction="unwindWithSegue:" id="mdM-c9-rEn"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="2Aw-T0-UdK">
+                            <color key="tintColor" red="0.25098039220000001" green="0.23921568630000001" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <segue destination="Vqk-kE-OxK" kind="unwind" identifier="save" unwindAction="unwindWithSegue:" id="JJr-tf-0h7"/>
                             </connections>
@@ -165,6 +173,13 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="aJD-yx-nEe">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="1" green="0.74117647060000003" blue="0.63137254899999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="1" green="0.74117647060000003" blue="0.63137254899999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="1" green="0.74117647060000003" blue="0.63137254899999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                            <color key="textColor" red="0.25098039215686274" green="0.23921568627450979" blue="0.23137254901960785" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

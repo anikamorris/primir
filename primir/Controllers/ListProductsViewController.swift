@@ -8,16 +8,21 @@
 
 import UIKit
 
+// Class for initial view controller
 class ListProductsTableViewController: UITableViewController {
     
+    // instatiate makeup item list of items of Project class
     var products = [Product]() {
+        // reload tableView if something has changed
         didSet {
             tableView.reloadData()
         }
     }
     
+    // call this function when view loads
     override func viewDidLoad() {
         super.viewDidLoad()
+        // reference 
         products = CoreDataHelper.retrieveProduct()
     }
 
