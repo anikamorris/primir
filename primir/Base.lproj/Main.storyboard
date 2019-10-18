@@ -27,16 +27,16 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="fN2-CK-876">
-                                            <rect key="frame" x="15" y="10" width="384" height="89.5"/>
+                                            <rect key="frame" x="15" y="15" width="384" height="69.5"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Product Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vJR-Pe-Za8">
-                                                    <rect key="frame" x="0.0" y="0.0" width="384" height="41.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="384" height="31.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                     <color key="textColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Product Brand" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dj1-OS-vO9">
-                                                    <rect key="frame" x="0.0" y="48.5" width="384" height="41"/>
+                                                    <rect key="frame" x="0.0" y="38.5" width="384" height="31"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                     <color key="textColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -48,9 +48,9 @@
                                         </stackView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="bottom" secondItem="fN2-CK-876" secondAttribute="bottom" id="Hdw-AC-skd"/>
+                                        <constraint firstAttribute="bottom" secondItem="fN2-CK-876" secondAttribute="bottom" constant="15" id="Hdw-AC-skd"/>
                                         <constraint firstAttribute="trailing" secondItem="fN2-CK-876" secondAttribute="trailing" constant="15" id="WSb-11-ucd"/>
-                                        <constraint firstItem="fN2-CK-876" firstAttribute="top" secondItem="R0u-IP-FVk" secondAttribute="top" constant="10" id="gOQ-k1-vOj"/>
+                                        <constraint firstItem="fN2-CK-876" firstAttribute="top" secondItem="R0u-IP-FVk" secondAttribute="top" constant="15" id="gOQ-k1-vOj"/>
                                         <constraint firstItem="fN2-CK-876" firstAttribute="leading" secondItem="R0u-IP-FVk" secondAttribute="leading" constant="15" id="i9f-zY-daf"/>
                                     </constraints>
                                 </tableViewCellContentView>

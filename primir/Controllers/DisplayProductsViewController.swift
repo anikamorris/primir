@@ -25,6 +25,13 @@ class DisplayProductsViewController: UIViewController, UITextViewDelegate {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         if let product = product {
+//            set title
+            let brand = product.brand ?? ""
+            let space = " "
+            let name = product.name ?? ""
+            let title = brand + space + name
+            self.title = title
+            
             nameTextField.text = product.name
             brandTextField.text = product.brand
             priceTextField.text = product.price
