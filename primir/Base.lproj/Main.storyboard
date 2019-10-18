@@ -93,22 +93,27 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="yjb-HJ-9qe">
-                                <rect key="frame" x="15" y="108" width="384" height="200"/>
+                                <rect key="frame" x="30" y="113" width="354" height="200"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Product Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6R0-1N-JQp">
-                                        <rect key="frame" x="0.0" y="0.0" width="384" height="58"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Product Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6R0-1N-JQp">
+                                        <rect key="frame" x="0.0" y="0.0" width="354" height="58"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Brand" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4Mo-ue-Yv1">
+                                        <rect key="frame" x="0.0" y="71" width="354" height="58"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Brand" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4Mo-ue-Yv1">
-                                        <rect key="frame" x="0.0" y="71" width="384" height="58"/>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="$" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zm2-wK-7LG">
-                                        <rect key="frame" x="0.0" y="142" width="384" height="58"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="$" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zm2-wK-7LG">
+                                        <rect key="frame" x="0.0" y="142" width="354" height="58"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="45"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -120,7 +125,7 @@
                                 </constraints>
                             </stackView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Product Notes" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="QNa-8i-ZVW">
-                                <rect key="frame" x="15" y="328" width="384" height="534"/>
+                                <rect key="frame" x="30" y="333" width="354" height="529"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
@@ -129,13 +134,13 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.95294117649999999" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="yjb-HJ-9qe" firstAttribute="top" secondItem="qNL-4k-oZm" secondAttribute="top" constant="20" id="7NF-7T-zZC"/>
+                            <constraint firstItem="yjb-HJ-9qe" firstAttribute="top" secondItem="qNL-4k-oZm" secondAttribute="top" constant="25" id="7NF-7T-zZC"/>
                             <constraint firstItem="QNa-8i-ZVW" firstAttribute="top" secondItem="yjb-HJ-9qe" secondAttribute="bottom" constant="20" id="E8j-92-0aq"/>
-                            <constraint firstItem="yjb-HJ-9qe" firstAttribute="leading" secondItem="qNL-4k-oZm" secondAttribute="leading" constant="15" id="KFo-Er-MzE"/>
-                            <constraint firstItem="qNL-4k-oZm" firstAttribute="trailing" secondItem="yjb-HJ-9qe" secondAttribute="trailing" constant="15" id="NHZ-jP-Zff"/>
+                            <constraint firstItem="yjb-HJ-9qe" firstAttribute="leading" secondItem="qNL-4k-oZm" secondAttribute="leading" constant="30" id="KFo-Er-MzE"/>
+                            <constraint firstItem="qNL-4k-oZm" firstAttribute="trailing" secondItem="yjb-HJ-9qe" secondAttribute="trailing" constant="30" id="NHZ-jP-Zff"/>
                             <constraint firstItem="qNL-4k-oZm" firstAttribute="bottom" secondItem="QNa-8i-ZVW" secondAttribute="bottom" id="RXC-PM-UoN"/>
-                            <constraint firstItem="QNa-8i-ZVW" firstAttribute="leading" secondItem="qNL-4k-oZm" secondAttribute="leading" constant="15" id="gIT-yf-AuE"/>
-                            <constraint firstItem="qNL-4k-oZm" firstAttribute="trailing" secondItem="QNa-8i-ZVW" secondAttribute="trailing" constant="15" id="oiM-Y9-G6o"/>
+                            <constraint firstItem="QNa-8i-ZVW" firstAttribute="leading" secondItem="qNL-4k-oZm" secondAttribute="leading" constant="30" id="gIT-yf-AuE"/>
+                            <constraint firstItem="qNL-4k-oZm" firstAttribute="trailing" secondItem="QNa-8i-ZVW" secondAttribute="trailing" constant="30" id="oiM-Y9-G6o"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="qNL-4k-oZm"/>
                     </view>
