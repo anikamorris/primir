@@ -59,6 +59,7 @@ class DisplayProductsViewController: UIViewController, UITextViewDelegate {
             product.name = nameTextField.text ?? ""
             product.content = contentTextView.text ?? ""
             product.brand = brandTextField.text ?? ""
+            product.price = priceTextField.text ?? ""
             
             CoreDataHelper.saveProduct()
 

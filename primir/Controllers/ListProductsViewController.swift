@@ -10,24 +10,38 @@ import UIKit
 
 class ListProductsTableViewController: UITableViewController {
     
-    var products = [Product]()
+    var products = [Product]() {
+        didSet {
+            tableView.reloadData()
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        products = CoreDataHelper.retrieveProduct()
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return products.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ListProductsTableViewCell", for: indexPath) as! ListProductsTableViewCell
         
-        cell.productNameLabel.text = "Product Name"
-        cell.productBrandLabel.text = "Brand"
+        let product = products[indexPath.row]
+        cell.productNameLabel.text = product.name
+        cell.productBrandLabel.text = product.brand
         
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            let productToDelete = products[indexPath.row]
+            CoreDataHelper.delete(product: productToDelete)
+            
+            products = CoreDataHelper.retrieveProduct()
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -35,7 +49,11 @@ class ListProductsTableViewController: UITableViewController {
         
         switch identifier {
         case "displayProduct":
-            print("cell tapped")
+            guard let indexPath = tableView.indexPathForSelectedRow else { return }
+            
+            let product = products[indexPath.row]
+            let destination = segue.destination as! DisplayProductsViewController
+            destination.product = product
             
         case "addProduct":
             print("add product bar button item tapped")
@@ -46,6 +64,7 @@ class ListProductsTableViewController: UITableViewController {
     }
     
     @IBAction func unwindWithSegue(_ segue: UIStoryboardSegue) {
+        products = CoreDataHelper.retrieveProduct()
     }
 }
 
