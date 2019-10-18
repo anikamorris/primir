@@ -9,8 +9,10 @@
 import Foundation
 import UIKit
 
+// TableView Cell class
 class ListProductsTableViewCell: UITableViewCell {
     
+    // Connect product name label and product brand label
     @IBOutlet weak var productNameLabel: UILabel!
     @IBOutlet weak var productBrandLabel: UILabel!
     
