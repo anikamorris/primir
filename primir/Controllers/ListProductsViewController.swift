@@ -15,7 +15,8 @@ class ListProductsTableViewController: UITableViewController {
     var products = [Product]() {
         // reload tableView if something has changed
         didSet {
-            tableView.reloadData()
+            // use extension to reload data with custom animation
+            tableView.reloadWithAnimation()
         }
     }
     
