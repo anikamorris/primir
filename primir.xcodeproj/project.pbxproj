@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF5B6A9623592F650031C939 /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5B6A9523592F650031C939 /* CoreDataHelper.swift */; };
 		CFF96FA4235912FD0022E970 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF96FA3235912FD0022E970 /* AppDelegate.swift */; };
 		CFF96FA6235912FD0022E970 /* ListProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF96FA5235912FD0022E970 /* ListProductsViewController.swift */; };
 		CFF96FA9235912FD0022E970 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFF96FA7235912FD0022E970 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CF5B6A9523592F650031C939 /* CoreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
 		CFF96FA0235912FD0022E970 /* primir.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = primir.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFF96FA3235912FD0022E970 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFF96FA5235912FD0022E970 /* ListProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListProductsViewController.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 		CFF96FB82359140C0022E970 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				CF5B6A9523592F650031C939 /* CoreDataHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 				CFF96FA6235912FD0022E970 /* ListProductsViewController.swift in Sources */,
 				CFF96FAC235912FD0022E970 /* primir.xcdatamodeld in Sources */,
 				CFF96FA4235912FD0022E970 /* AppDelegate.swift in Sources */,
+				CF5B6A9623592F650031C939 /* CoreDataHelper.swift in Sources */,
 				CFF96FC1235915040022E970 /* Date+convertToString.swift in Sources */,
 				CFF96FBD2359149E0022E970 /* DisplayProductsViewController.swift in Sources */,
 				CFF96FBF235914D20022E970 /* ListProductsTableViewCell.swift in Sources */,

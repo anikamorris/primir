@@ -145,6 +145,12 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="brandTextField" destination="4Mo-ue-Yv1" id="yOZ-vy-Apx"/>
+                        <outlet property="contentTextView" destination="QNa-8i-ZVW" id="29e-GS-Nxz"/>
+                        <outlet property="nameTextField" destination="6R0-1N-JQp" id="MA3-mA-YOk"/>
+                        <outlet property="priceTextField" destination="zm2-wK-7LG" id="ICU-IG-yy8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rl6-UM-7jl" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="Vqk-kE-OxK" userLabel="Exit" sceneMemberID="exit"/>
