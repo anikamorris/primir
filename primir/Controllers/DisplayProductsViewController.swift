@@ -32,6 +32,7 @@ class DisplayProductsViewController: UIViewController, UITextViewDelegate {
         brandTextField.layer.cornerRadius = 15.0
         priceTextField.layer.cornerRadius = 15.0
         contentTextView.layer.cornerRadius = 10.0
+        
         // if there are any products
         if let product = product {
             // set nav bar title
@@ -47,7 +48,7 @@ class DisplayProductsViewController: UIViewController, UITextViewDelegate {
             priceTextField.text = product.price
             // if user didn't save notes on the product...
             if product.content == "  Product Notes" {
-                // ... either empty text view ...
+                // ... either empty the text view ...
                 contentTextView.text = ""
             } else {
                 // ... or set contextTextView to saved notes
